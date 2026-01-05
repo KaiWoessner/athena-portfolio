@@ -17,7 +17,7 @@ export default function App() {
           {/* Headshot */}
           <div className="bg-white p-4 shadow-lg max-w-sm md:max-w-md mx-auto">
             <img
-              src="src/assets/headshot-main.jpg"
+              src="/headshot-main.jpg"
               alt="Athena Riva headshot"
               className="w-full h-auto object-cover rounded"
             />
@@ -52,7 +52,7 @@ export default function App() {
                 className="w-full h-96 overflow-hidden rounded shadow-md flex items-center justify-center"
               >
                 <img
-                  src={`src/assets/headshot-${i}.jpg`}
+                  src={`/headshot-${i}.jpg`}
                   alt="Headshot"
                   className="w-full h-full object-cover"
                 />

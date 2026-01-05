@@ -3,9 +3,9 @@ import { useState } from "react";
 /* Gallery */
 function Gallery() {
   const images = [
-    "src/assets/gallery-1.jpg",
-    "src/assets/gallery-2.jpg",
-    "src/assets/gallery-3.jpg",
+    "/gallery-1.jpg",
+    "/gallery-2.jpg",
+    "/gallery-3.jpg",
   ];
 
   const [index, setIndex] = useState(0);
@@ -29,14 +29,14 @@ function Gallery() {
         {/* Controls */}
         <button
           onClick={prev}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-2 rounded shadow border-2 border-black"
+          className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-2 rounded shadow border-2 border-black cursor-pointer"
         >
           ‹
         </button>
 
         <button
           onClick={next}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-2 rounded shadow border-2 border-black"
+          className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-2 rounded shadow border-2 border-black cursor-pointer"
         >
           ›
         </button>
