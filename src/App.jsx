@@ -1,4 +1,3 @@
-import React from "react";
 import Gallery from "./Gallery";
 
 export default function App() {
@@ -38,23 +37,22 @@ export default function App() {
 
       {/* Resume + Headshots */}
       <section>
-        {/* Header pink */}
         <div className="bg-rose-300 px-8 py-6 text-center">
           <h2 className="text-4xl font-bold">Resume and Headshot</h2>
         </div>
 
-        {/* Content white */}
+        {/* Heashots */}
         <div className="bg-white px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[1, 2, 3].map((i) => (
               <div
                 key={i}
-                className="w-full h-96 overflow-hidden rounded shadow-md flex items-center justify-center"
+                className="flex items-center justify-center"
               >
                 <img
                   src={`/headshot-${i}.jpg`}
                   alt="Headshot"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto"
                 />
               </div>
             ))}
@@ -85,15 +83,10 @@ export default function App() {
 
       {/* Gallery */}
       <section>
-        {/* Gallery header pink */}
         <div className="bg-rose-300 px-8 py-6 text-center">
           <h2 className="text-4xl">Gallery</h2>
         </div>
-
-        {/* Actual gallery images with white background */}
-        <div className="bg-white px-8 py-12">
-          <Gallery />
-        </div>
+        <Gallery />
       </section>
 
       {/* Footer */}

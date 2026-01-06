@@ -15,9 +15,8 @@ function Gallery() {
     setIndex((index - 1 + images.length) % images.length);
 
   return (
-    <section className="bg-white px-8 py-12 text-center">
-      <div className="relative w-4/5 mx-auto">
-        {/* Responsive container */}
+    <section className="bg-white px-8 py-6 text-center">
+      <div className="relative mx-auto">
         <div className="w-full max-w-full sm:max-w-3xl md:max-w-4xl flex items-center justify-center bg-white-300 rounded shadow-lg aspect-[4/3] mx-auto">
           <img
             src={images[index]}
