@@ -37,8 +37,17 @@ export default function App() {
 
       {/* Resume + Headshots */}
       <section>
-        <div className="bg-rose-300 px-8 py-6 text-center">
+        <div className="bg-rose-300 px-8 py-6 text-center space-y-4">
           <h2 className="text-4xl font-bold">Resume and Headshot</h2>
+
+          <a
+            href="/Athena-Riva-headshot-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-white text-gray-900 px-6 py-3 text-m font-bold shadow-md hover:bg-gray-100 transition"
+          >
+            View / Download Resume (PDF)
+          </a>
         </div>
 
         {/* Heashots */}
